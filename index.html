@@ -30,6 +30,17 @@ button:active{transform:translateY(3px);box-shadow:0 1px 0 #cab8d3}button.primar
 .card h2{margin:6px 0 8px;font-size:24px}.card p{font-size:14px;line-height:1.45;margin:8px 0}.card .big{font-size:64px;line-height:1}
 .card input{width:100%;font-size:16px;padding:12px;border-radius:14px;border:3px solid #eadfeb;margin:10px 0;text-align:center;font-family:inherit}
 .card button{width:100%;margin-top:8px}.card ul{text-align:left;font-size:13px;padding-left:20px;line-height:1.5;margin:8px 0}
+</style><style>/* desktop layout (site build only) */
+@media (min-width:900px) and (min-height:600px){
+.app{max-width:min(1140px,calc((100dvh - 150px)*1.75));padding:26px 32px 32px}h1{font-size:42px}
+.screen{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(330px,1fr);column-gap:26px;align-items:start;grid-template-rows:auto auto auto auto 1fr auto;padding:22px}
+.screen>.top{grid-column:1/-1;grid-row:1}
+.screen>.scene{grid-column:1;grid-row:2/span 4}
+.screen>.caption{grid-column:1;grid-row:6}
+.screen>.meter{grid-column:2;grid-row:2;margin:4px 0 0}
+.screen>.stats{grid-column:2;grid-row:3;margin:12px 0}
+.screen>.actions{grid-column:2;grid-row:4}
+.log{max-width:none}}
 </style></head><body><main class="app"><header><h1>🥔 MOOCHI</h1><small>The emotionally unavailable potato simulator™</small></header>
 <div class="screen">
 <div class="top"><span id="nameTag">Moochi</span><span id="age">Day 1 · Sprout</span><button class="reset" id="pauseBtn" onclick="togglePause()" style="padding:4px 8px;font-size:20px;text-decoration:none" aria-label="Pause">⏸</button></div>
